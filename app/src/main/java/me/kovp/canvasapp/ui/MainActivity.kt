@@ -69,7 +69,13 @@ class MainActivity : AppCompatActivity() {
             point.x.toFloat(),
             point.y.toFloat(),
             sphere.radius.toFloat(),
-            coloredGradient(point, sphere.color, sphere.radius.toFloat())
+            coloredPaint(sphere.color)
+        )
+        canvas.drawCircle(
+            point.x.toFloat(),
+            point.y.toFloat(),
+            sphere.radius.toFloat(),
+            coloredGradient(sphere.color)
         )
         canvas.drawText(
             sphere.text,
